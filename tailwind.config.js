@@ -27,6 +27,9 @@ module.exports = {
         primary:"#0c5185",
         secondary:"#078ed0",
         accent:"#1f436f",
+        'blue':{
+          100: '#dbeafe'
+        }
     },
   },
   plugins: [],
