@@ -1,17 +1,18 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { links } from '@/lib/data';
+import React from "react";
 
-const FullLayout = ({children}) => {
+import Footer from "./Footer";
+import { links } from "@/lib/data";
+import Navbar from "./Navbar";
+import Navbartwo from "./NavBartwo";
+
+const FullLayout = ({ children }) => {
   return (
-    <div>
-        <Navbar links={links} />
-        {children}
-        <Footer />
-    </div>
-    
-  )
-}
+    <>
+      <Navbartwo links={links} />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
-export default FullLayout
+export default FullLayout;

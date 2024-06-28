@@ -2,29 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
 @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+  from {
+    transform: translateX(100%);
   }
-  
-  @keyframes slideOutRight {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(100%);
-    }
+  to {
+    transform: translateX(0);
   }
-  
-  .animate-slideInRight {
-    animation: slideInRight 0.3s ease-in-out;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
   }
-  
-  .animate-slideOutRight {
-    animation: slideOutRight 0.3s ease-in-out;
+  to {
+    transform: translateX(100%);
   }
-  
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-in-out;
+}
+
+.animate-slideOutRight {
+  animation: slideOutRight 0.3s ease-in-out;
+}
+
+/*clip path*/
+
+.clippathtri {
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+}
+
+/*debugging*/
+/* *{
+    border: 3px solid red;
+  } */
+
+.blue-triangle::after {
+  background-color: "#078ed0";
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+}

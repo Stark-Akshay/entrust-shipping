@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Inter, Play } from 'next/font/google'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,14 +13,10 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      fontWeight:{
-          'fw-30':30,
-          'fw-50':50,
-          'fw-70':70,
-          'fw-100':100,
-      },
       fontFamily: {
-        'm-sans': ['Merriweather Sans', 'sans-serif'],
+        play: ["Play", "sans-serif"],
+        msans: ["Merriweather sans", "sans-serif"],
+        
       },
     },
     colors:{
